@@ -1,6 +1,40 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
+
+
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 2rem;
-  background-color: #f4f4f4;
+font-family: 'Cormorant Unicase', serif;
+  margin: 0;
+  background-color: #d7c8b1;
   color: #333;
+}
+
+/* Override Bulma's default button color */
+.button {
+  background-color: #0e442f !important;
+  color: #d7c8b1 !important;
+  border-color: #0a3021 !important;
+}
+.button:hover,
+.button:focus {
+  background-color: #197954 !important;
+  border-color: #0a3021 !important;
+}
+
+.subtitle,
+.title {
+  color: #0e442f;
+}
+
+#booking-banner{
+  background-color: #0e442f;
+  background-image: url('imgs/texture_green.jpg');
+  background-size: cover;
+  margin: 0;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  z-index: 10;
 }

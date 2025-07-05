@@ -1,14 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1816: A Year Without A Summer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-  <h1>Hello, World!</h1>
-  <p>This is my static website.</p>
-  <script src="script.js"></script>
+<body class="has-navbar-fixed-top">
+    <script src="script.js"></script>
+    <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" onclick="toggleNavbar()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbar" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+
+                <a class="navbar-item">
+                    About
+                </a>
+
+                <a class="navbar-item">
+                    Cast & Creators
+                </a>
+
+                <a class="navbar-item">
+                    Gallery
+                </a>
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary" href="https://www.camdenfringe.com/1816-a-year-without-a-summer/">
+                            <strong>Book Now</strong>
+                        </a>
+                        <a id="instagram-button" href="https://www.instagram.com/1816_musical/">
+                            <i class="fa-brands fa-instagram" aria-hidden=true style="color: #0e442f; font-size: 1.5em; padding-top: 3px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="image-container" style="width: 100%;">
+        <img src="/imgs/miidborder.png" style="width: 100%; height: auto; display: block;" />
+    </div>
+
+    <div id="tagline-banner" style="padding: 20px;">
+        <p class="title is-1" style="text-align: center;">
+            Five Romantics. One storm. Who will break first?
+        </p>
+    </div>
+
+<div id="TEMP-SPACE-FILLER" style="height: 1000px;"></div>
+
+    <div id="booking-banner">
+        <p class="title is-2" style="color: #fff;">
+            Bookings available for Camden Fringe 2025
+        </p>
+    </div>
+    <section id="booking-hero" class="hero" style="background-image: url(imgs/texture_paper.jpg);">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <p class="subtitle is-3" style="color: #0e442f;">Performances on August 6th & 7th</p>
+            </div>
+            <div class="buttons is-centered">
+                <a class="button is-primary" href="https://www.camdenfringe.com/1816-a-year-without-a-summer/">
+                    <strong>Book Now</strong>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div id="TEMP-SPACE-FILLER" style="height: 1000px;"></div>
 </body>
 </html>
