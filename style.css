@@ -1,7 +1,7 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
 
 
-body {
+title {
 font-family: 'Cormorant Unicase', serif;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@ font-family: 'Cormorant Unicase', serif;
   /*color: #d7c8b1;*/
 }
 
-.amarante-regular {
+body {
   font-family: "Amarante", serif;
   font-weight: 400;
   font-style: normal;
