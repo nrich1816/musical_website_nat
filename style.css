@@ -1,11 +1,5 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
 
-.amarante-regular {
-  font-family: "Amarante", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 
 body {
 font-family: 'Cormorant Unicase', serif;
@@ -17,6 +11,12 @@ font-family: 'Cormorant Unicase', serif;
 .navbar {
   background-color: #222;
   /*color: #d7c8b1;*/
+}
+
+.amarante-regular {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Override Bulma's default button color */
