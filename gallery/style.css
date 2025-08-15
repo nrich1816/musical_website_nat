@@ -82,3 +82,14 @@ subtitles {
   padding: 20px;
   z-index: 10;
 }
+
+img {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+img:hover{
+    height: 400px;
+    width: 400px;
+}
+
