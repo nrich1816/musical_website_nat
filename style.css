@@ -19,6 +19,14 @@ subtitle {
   font-style: normal;
 }
 
+
+subtitles {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Override Bulma's default button color */
 .button {
   background-color: #0e442f !important;
