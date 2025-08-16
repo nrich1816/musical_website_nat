@@ -82,37 +82,29 @@ subtitles {
 }
 
 .gallery-container {
-  column-count: 4;
-  column-gap: 16px;
-  padding: 16px;
-}
-
-.responsive {
-  break-inside: avoid;
-  margin-bottom: 16px;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-@media (max-width: 1200px) {
-  .gallery-container {
-    column-count: 3;
-  }
+  column-count: 4;     /* number of columns on large screens */
+  column-gap: 12px;    /* space between columns */
 }
 
 @media (max-width: 900px) {
   .gallery-container {
-    column-count: 2;
+    column-count: 2;   /* fewer columns on medium screens */
   }
 }
 
 @media (max-width: 500px) {
   .gallery-container {
-    column-count: 1;
+    column-count: 1;   /* single column on mobile */
   }
+}
+
+.responsive {
+  break-inside: avoid; /* prevents images from splitting across columns */
+  margin-bottom: 12px; /* spacing between stacked images */
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
