@@ -25,6 +25,9 @@ subtitles {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Override Bulma's default button color */
