@@ -46,7 +46,6 @@ subtitles {
 
 #tagline-banner{
   background-color: #d7c8b1;
-  width: 100%;
 }
 .columns{
   background-color: #222;
@@ -85,7 +84,7 @@ subtitles {
 }
 
 @media (max-width: 600px) {
-    tagline banner {
-        width: 80%;
-    }
+  .tagline-banner {
+    font-size: 30px;
+  }
 }
