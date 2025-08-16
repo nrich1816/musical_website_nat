@@ -92,6 +92,11 @@ div.gallery:hover {
   transform:scale(2)
 }
 
+div.gallery img {
+  width: 100%;   /* make the image fit inside the responsive box */
+  height: auto;
+}
+
 * {
   box-sizing: border-box;
 }
