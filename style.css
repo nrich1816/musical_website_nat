@@ -84,10 +84,3 @@ subtitles {
   padding: 20px;
   z-index: 10;
 }
-
-@media (max-width: 600px) {
-  #tagline-banner {
-    font-size: 30px !important;
-    line-height: 1.2 !important;
-  }
-}
