@@ -82,9 +82,22 @@ subtitles {
 }
 
 .gallery-container {
-  column-count: 4;      /* default number of columns on large screens */
-  column-gap: 16px;     /* space between columns */
-  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 8px;       /* small row height for masonry effect */
+  grid-auto-flow: dense;     /* fills gaps left by taller items */
+  gap: 16px;
+}
+
+.responsive {
+  /* Let the item span rows based on image height */
+  display: block;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 
@@ -105,17 +118,3 @@ subtitles {
     column-count: 1;
   }
 }
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.responsive {
-  break-inside: avoid;
-  -webkit-column-break-inside: avoid;
-  -moz-column-break-inside: avoid;
-  margin-bottom: 16px;
-}
-
