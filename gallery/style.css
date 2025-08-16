@@ -92,10 +92,6 @@ div.gallery:hover {
   transform:scale(2)
 }
 
-div.gallery img {
-  height: auto;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -123,8 +119,4 @@ div.gallery img {
   content: "";
   display: table;
   clear: both;
-}
-
-.responsive {
-  background: lightblue; /* just for testing */
 }
