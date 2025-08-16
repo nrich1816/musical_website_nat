@@ -99,17 +99,16 @@ subtitles {
   }
 }
 
-.responsive {
-  break-inside: avoid; /* prevents images from splitting across columns */
-  margin-bottom: 12px; /* spacing between stacked images */
-}
-
 div.gallery img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-display: inline-block;
-width: 100%;
+.responsive {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  margin-bottom: 16px;
+}
 
