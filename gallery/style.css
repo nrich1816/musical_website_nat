@@ -82,9 +82,10 @@ subtitles {
 }
 
 .gallery-container {
-  column-count: 4;     /* number of columns on large screens */
-  column-gap: 12px;    /* space between columns */
+  column-gap: 16px;  /* was 12px */
+  padding: 16px;     /* gives some breathing room */
 }
+
 
 @media (max-width: 900px) {
   .gallery-container {
@@ -109,8 +110,6 @@ div.gallery img {
   display: block;
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+display: inline-block;
+width: 100%;
+
