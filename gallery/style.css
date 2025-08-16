@@ -84,14 +84,12 @@ subtitles {
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: 8px;       /* small row height for masonry effect */
-  grid-auto-flow: dense;     /* fills gaps left by taller items */
   gap: 16px;
 }
 
 .responsive {
-  /* Let the item span rows based on image height */
   display: block;
+  width: 100%;
 }
 
 .gallery img {
