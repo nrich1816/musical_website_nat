@@ -81,24 +81,6 @@ subtitles {
   z-index: 10;
 }
 
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-  transform:scale(2)
-}
-
-div.gallery img {
-  width: 100%;   /* make the image fit inside the responsive box */
-  height: auto;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .gallery-container {
   column-count: 4;     /* number of columns on large screens */
   column-gap: 12px;    /* space between columns */
