@@ -46,6 +46,7 @@ subtitles {
 
 #tagline-banner{
   background-color: #d7c8b1;
+  width: 100%;
 }
 .columns{
   background-color: #222;
@@ -83,12 +84,8 @@ subtitles {
   z-index: 10;
 }
 
-input[type="text"] {
-    width: 100%;
-}
-
 @media (max-width: 600px) {
-    input[type="text"] {
+    tagline banner {
         width: 80%;
     }
 }
