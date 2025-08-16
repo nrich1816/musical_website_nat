@@ -82,8 +82,9 @@ subtitles {
 }
 
 .gallery-container {
-  column-gap: 16px;  /* was 12px */
-  padding: 16px;     /* gives some breathing room */
+  column-count: 4;      /* default number of columns on large screens */
+  column-gap: 16px;     /* space between columns */
+  padding: 16px;
 }
 
 
