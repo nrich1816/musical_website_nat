@@ -84,7 +84,7 @@ subtitles {
 }
 
 @media (max-width: 600px) {
-  .tagline-banner {
+  #tagline-banner {
     font-size: 30px;
   }
 }
