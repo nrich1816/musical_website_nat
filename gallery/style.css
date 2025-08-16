@@ -124,3 +124,7 @@ div.gallery img {
   display: table;
   clear: both;
 }
+
+.responsive {
+  background: lightblue; /* just for testing */
+}
