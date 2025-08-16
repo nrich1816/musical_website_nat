@@ -82,3 +82,13 @@ subtitles {
   padding: 20px;
   z-index: 10;
 }
+
+input[type="text"] {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 80%;
+    }
+}
