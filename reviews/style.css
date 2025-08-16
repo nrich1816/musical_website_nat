@@ -82,3 +82,7 @@ subtitles {
   padding: 20px;
   z-index: 10;
 }
+
+#photo{
+  align-items: center;
+}
