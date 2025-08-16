@@ -68,6 +68,12 @@ subtitles {
       vertical-align: middle;
     }
 
+#sub-section {
+  display: block;
+  width: 100%;
+}
+
+
 .subtitle,
 .title {
   color: #0e442f;
