@@ -82,14 +82,14 @@ subtitles {
 }
 
 .gallery-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 16px;
+  column-count: 4;
+  column-gap: 16px;
+  padding: 16px;
 }
 
 .responsive {
-  display: block;
-  width: 100%;
+  break-inside: avoid;
+  margin-bottom: 16px;
 }
 
 .gallery img {
