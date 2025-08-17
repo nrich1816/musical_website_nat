@@ -44,6 +44,24 @@ subtitles {
   border-color: #0a3021 !important;
 }
 
+.button-outline {
+  background-color: transparent !important;  /* no fill */
+  border: 2px solid #0e442f !important;  
+  color: #d7c8b1 !important;              
+  justify-content: flex-start;          
+}
+
+.button-outline:hover,
+.button-outline:focus {
+  background-color: #0e442f !important;  /* green fill on hover */
+  color: #d7c8b1 !important;             /* beige text on hover */
+}
+
+#synopsis-section .buttons {
+  justify-content: flex-start;
+}
+
+
 #tagline-banner{
   background-color: #d7c8b1;
   font-size: 60px;
