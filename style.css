@@ -61,7 +61,6 @@ subtitles {
     flex-direction: row;
     align-items: center;
   justify-content: center;
-    padding: 30px;
   }
   #synopsis-section .subtitle {
       padding: 20px;
