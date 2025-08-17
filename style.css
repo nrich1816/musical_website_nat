@@ -62,14 +62,18 @@ subtitles {
 }
 
 .wide-button {
-  display: block;                      /* make it expand like a block */
-  width: 80%;                          /* or 95%, adjust as you like */
-  margin: 0 auto;                      /* center the button in column */
+  display: block !important;            /* force block so width applies */
+  width: 80%;                           /* stretch across most of column */
+  margin: 0 auto;                       /* center horizontally */
+  box-sizing: border-box;               /* include border in width */
+  
   background-color: transparent !important;
   border: 2px solid #0e442f !important;
   color: #0e442f !important;
-  text-align: center;                  /* center text */
-  justify-content: center !important;  /* override Bulma’s flex */
+  text-align: center !important;        /* text centered */
+  
+  /* reset Bulma flex */
+  display: block !important;
 }
 
 .wide-button:hover,
