@@ -54,6 +54,7 @@ subtitle {
 }
 .columns{
   background-color: #222;
+  align-items: stretch;
   #synopsis-image {
     margin: 20px;
   }
