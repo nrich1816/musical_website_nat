@@ -57,6 +57,14 @@ subtitles {
   color: #d7c8b1 !important;             /* beige text on hover */
 }
 
+.button-wrapper {
+    width: 100%;               /* full width of parent */
+    padding: 0;                /* remove inherited padding */
+    display: flex;
+    justify-content: center;   /* center the button */
+    box-sizing: border-box;
+}
+
 .wide-button {
   display: inline-block !important;   /* override Bulma flex */
   width: 80%;                         /* almost full column width */
