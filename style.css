@@ -133,3 +133,8 @@ subtitles {
   padding: 20px;
   z-index: 10;
 }
+
+#booking-hero .hero-body {
+    padding-top: 2rem;       /* keep some space above content */
+    padding-bottom: 1rem;    /* shrink bottom gap */
+}
