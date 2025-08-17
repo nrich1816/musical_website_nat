@@ -81,19 +81,49 @@ subtitles {
   box-sizing: border-box;
 }
 
-/* Dev credit responsive for small screens */
-.dev-credit {
-  margin-top: 1rem;
+#bottom-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222; /* optional: match your page or keep transparent */
   text-align: center;
-  font-size: 1rem; /* default size */
+  padding: 0.5rem 0;
+  z-index: 9999; /* always on top */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem; /* spacing between button and dev credit */
+  box-sizing: border-box;
 }
 
-/* Shrink dev credit text on mobile */
+#bottom-fixed .wide-button {
+  width: 80%;
+  max-width: 400px;
+  padding: 0;
+  text-align: center;
+  background-color: transparent !important;
+  border: 2px solid #0e442f !important;
+  color: #0e442f !important;
+}
+
+.dev-credit {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #0e442f;
+}
+
+/* Mobile adjustments */
 @media screen and (max-width: 480px) {
-  .dev-credit font {
+  #bottom-fixed .wide-button {
+    width: 90%;
+  }
+
+  .dev-credit {
     font-size: 0.8rem;
     line-height: 1.2;
   }
+}
 
   .wide-button {
     width: 90%; /* smaller width on mobile */
