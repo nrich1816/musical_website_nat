@@ -57,25 +57,22 @@ subtitles {
   color: #d7c8b1 !important;             /* beige text on hover */
 }
 
-#synopsis-section .buttons {
-  justify-content: flex-start;
-}
-
 .button-wrapper {
-    width: 100%;
+    width: 80%;               /* button stretches to 80% of column */
     display: flex;
-    justify-content: center;  /* centers button horizontally */
-    padding: 0;               /* ignore column padding */
+    justify-content: center;  /* centers button inside wrapper */
+    margin-top: 1rem;         /* spacing above button */
 }
 
 .wide-button {
-    width: 80%;                  /* 80% of wrapper */
-    max-width: 95%;
-    text-align: center;
-    display: inline-block;       /* ensure it shows inside flex container */
+    width: 100%;              /* fills the wrapper width */
+    max-width: 100%;
+    text-align: center;       /* centers text inside button */
+    display: inline-block;
     background-color: transparent !important;
     border: 2px solid #0e442f !important;
-    color: #0e442f !important;
+    color: #feeab8 !important; /* visible on dark column */
+    padding: 0.75rem 1rem;    /* make button taller */
 }
 
 .wide-button:hover,
