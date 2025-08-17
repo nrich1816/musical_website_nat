@@ -62,18 +62,17 @@ subtitles {
 }
 
 .wide-button {
-  display: block !important;            /* force block so width applies */
-  width: 80%;                           /* stretch across most of column */
-  margin: 0 auto;                       /* center horizontally */
-  box-sizing: border-box;               /* include border in width */
+  display: inline-block !important;   /* override Bulma flex */
+  width: 80%;                         /* almost full column width */
+  max-width: 95%;                     /* prevent overflow */
+  margin: 20px auto 0 auto;           /* center horizontally, spacing on top */
+  padding: 12px 0;                     /* optional: taller button */
   
   background-color: transparent !important;
   border: 2px solid #0e442f !important;
   color: #0e442f !important;
-  text-align: center !important;        /* text centered */
-  
-  /* reset Bulma flex */
-  display: block !important;
+  text-align: center !important;      /* center text */
+  box-sizing: border-box;             /* include border in width */
 }
 
 .wide-button:hover,
@@ -81,6 +80,7 @@ subtitles {
   background-color: #0e442f !important;
   color: #d7c8b1 !important;
 }
+
 
 #tagline-banner{
   background-color: #d7c8b1;
