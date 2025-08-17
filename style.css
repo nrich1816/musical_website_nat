@@ -62,13 +62,14 @@ subtitles {
 }
 
 .wide-button {
-  width: 95%;                  /* take up most of the column */
-  max-width: 100%;             /* prevent overflow */
+  display: block;                      /* make it expand like a block */
+  width: 80%;                          /* or 95%, adjust as you like */
+  margin: 0 auto;                      /* center the button in column */
   background-color: transparent !important;
   border: 2px solid #0e442f !important;
   color: #0e442f !important;
-  text-align: center;            /* keep text aligned left */
-  justify-content: flex-start; /* align content inside */
+  text-align: center;                  /* center text */
+  justify-content: center !important;  /* override Bulma’s flex */
 }
 
 .wide-button:hover,
