@@ -57,32 +57,47 @@ subtitles {
   color: #d7c8b1 !important;             /* beige text on hover */
 }
 
+
+/* Button wrapper overrides column/container padding */
 .button-wrapper {
-    width: 100%;               /* full width of parent */
-    padding: 0;                /* remove inherited padding */
-    display: flex;
-    justify-content: center;   /* center the button */
-    box-sizing: border-box;
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  display: flex;
+  justify-content: center; /* center the button */
+  margin-top: 1rem;
+  box-sizing: border-box;
 }
 
+/* Keep the wide button centered */
 .wide-button {
-  display: inline-block !important;   /* override Bulma flex */
-  width: 80%;                         /* almost full column width */
-  max-width: 95%;                     /* prevent overflow */
-  margin: 20px auto 0 auto;           /* center horizontally, spacing on top */
-  padding: 12px 0;                     /* optional: taller button */
-  
+  width: 80%;
+  max-width: 400px; /* optional max-width to prevent overflow on mobile */
+  text-align: center;
   background-color: transparent !important;
   border: 2px solid #0e442f !important;
   color: #0e442f !important;
-  text-align: center !important;      /* center text */
-  box-sizing: border-box;             /* include border in width */
+  padding: 12px 0;
+  box-sizing: border-box;
 }
 
-.wide-button:hover,
-.wide-button:focus {
-  background-color: #0e442f !important;
-  color: #d7c8b1 !important;
+/* Dev credit responsive for small screens */
+.dev-credit {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem; /* default size */
+}
+
+/* Shrink dev credit text on mobile */
+@media screen and (max-width: 480px) {
+  .dev-credit font {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .wide-button {
+    width: 90%; /* smaller width on mobile */
+  }
 }
 
 
