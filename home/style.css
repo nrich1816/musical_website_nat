@@ -52,12 +52,14 @@ subtitles {
   #synopsis-image {
     margin: 20px;
   }
-  #synopsis-section {
+   #synopsis-section {
     display: flex;
     flex-direction: row;
     align-items: center;
+  justify-content: center;
     padding: 30px;
-    .subtitle {
+  }
+  #synopsis-section .subtitle {
       padding: 20px;
       margin-right: 20px;
       color: #d7c8b1;
