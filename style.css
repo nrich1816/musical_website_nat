@@ -97,31 +97,44 @@ subtitles {
   box-sizing: border-box;
 }
 
-#bottom-fixed .wide-button {
+#bottom-fixed {
+  position: fixed;
+  bottom: 0;           /* stick to bottom */
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;  /* see-through */
+  z-index: 999;         /* stay above content */
+}
+
+.wide-button {
   width: 80%;
   max-width: 400px;
-  padding: 0;
   text-align: center;
+  padding: 12px 0;
   background-color: transparent !important;
   border: 2px solid #0e442f !important;
   color: #0e442f !important;
+  box-sizing: border-box;
+  margin: 0;             /* remove any spacing */
 }
 
 .dev-credit {
+  margin: 0;             /* remove spacing */
   font-size: 0.9rem;
-  margin: 0;
+  text-align: center;
   color: #0e442f;
 }
 
-/* Mobile adjustments */
+/* mobile adjustments */
 @media screen and (max-width: 480px) {
-  #bottom-fixed .wide-button {
+  .wide-button {
     width: 90%;
   }
-
   .dev-credit {
     font-size: 0.8rem;
-    line-height: 1.2;
   }
 }
 
