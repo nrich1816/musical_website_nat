@@ -99,40 +99,49 @@ subtitles {
 
 #bottom-fixed {
   position: fixed;
-  bottom: 0;           /* stick to bottom */
+  bottom: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: transparent;  /* see-through */
-  z-index: 999;         /* stay above content */
+  text-align: center;
+  background: transparent;  /* ensure see-through */
+  z-index: 999;
+  padding: 0;
+  margin: 0;
 }
 
+/* Button styling */
 .wide-button {
+  display: inline-block;
   width: 80%;
   max-width: 400px;
-  text-align: center;
   padding: 12px 0;
+  margin: 0;
   background-color: transparent !important;
   border: 2px solid #0e442f !important;
   color: #0e442f !important;
   box-sizing: border-box;
-  margin: 0;             /* remove any spacing */
 }
 
+/* Dev credit styling */
 .dev-credit {
-  margin: 0;             /* remove spacing */
+  margin: 0;
   font-size: 0.9rem;
-  text-align: center;
   color: #0e442f;
+  line-height: 1.2;
 }
 
-/* mobile adjustments */
+/* Mobile adjustments */
 @media screen and (max-width: 480px) {
+  #bottom-fixed {
+    position: static;       /* lets it follow normal flow under Book Now */
+    margin-top: 1rem;
+  }
+
   .wide-button {
     width: 90%;
+    margin-bottom: 0.5rem;
   }
+
   .dev-credit {
     font-size: 0.8rem;
   }
@@ -145,7 +154,7 @@ subtitles {
 
 
 #tagline-banner{
-  background-color: #d7c8b1;
+  background-color: #d7c8b1 !important;
   font-size: 60px;
   font-weight: 400;
   color: #0e442f;
