@@ -62,16 +62,17 @@ subtitles {
 }
 
 .button-wrapper {
-    padding: 0;                /* ignore column padding */
-    width: 100%;               /* full column width */
+    width: 100%;
     display: flex;
-    justify-content: center;    /* center button horizontally */
+    justify-content: center;  /* centers button horizontally */
+    padding: 0;               /* ignore column padding */
 }
 
 .wide-button {
-    width: 80%;                /* button width relative to wrapper */
+    width: 80%;                  /* 80% of wrapper */
     max-width: 95%;
     text-align: center;
+    display: inline-block;       /* ensure it shows inside flex container */
     background-color: transparent !important;
     border: 2px solid #0e442f !important;
     color: #0e442f !important;
