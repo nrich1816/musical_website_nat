@@ -58,21 +58,21 @@ subtitles {
 }
 
 .button-wrapper {
-    width: 80%;               /* button stretches to 80% of column */
+    width: 80%;                /* button takes 80% of column width */
     display: flex;
-    justify-content: center;  /* centers button inside wrapper */
-    margin-top: 1rem;         /* spacing above button */
+    justify-content: center;   /* center the button inside wrapper */
+    margin-top: 1rem;
 }
 
 .wide-button {
-    width: 100%;              /* fills the wrapper width */
+    width: 100%;               /* fills wrapper */
     max-width: 100%;
-    text-align: center;       /* centers text inside button */
-    display: inline-block;
+    text-align: center;        /* centers text */
     background-color: transparent !important;
     border: 2px solid #0e442f !important;
-    color: #feeab8 !important; /* visible on dark column */
-    padding: 0.75rem 1rem;    /* make button taller */
+    color: #feeab8 !important; /* visible on dark background */
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
 }
 
 .wide-button:hover,
