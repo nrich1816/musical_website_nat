@@ -47,7 +47,7 @@ subtitles {
 .button-outline {
   background-color: transparent !important;  /* no fill */
   border: 2px solid #0e442f !important;  
-  color: #d7c8b1 !important;              
+  color: #0e442f !important;              
   justify-content: flex-start;          
 }
 
