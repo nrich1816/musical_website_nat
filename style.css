@@ -3,207 +3,94 @@
 
 body {
 font-family: 'Cormorant Unicase', serif;
-  display: flex;
-  flex-direction: column;
-  background-color: #222;
-  color: #333;
+display: flex;
+flex-direction: column;
+background-color: #222;
+color: #333;
 }
 .navbar {
-  background-color: #222;
-  /*color: #d7c8b1;*/
+background-color: #222;
+/*color: #d7c8b1;*/
 }
 
 subtitle {
-  font-family: "Amarante", serif;
-  font-weight: 400;
-  font-style: normal;
+font-family: "Amarante", serif;
+font-weight: 400;
+font-style: normal;
 }
 
 
 subtitles {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+font-family: "EB Garamond", serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
 }
 
 /* Override Bulma's default button color */
 .button {
-  background-color: #0e442f !important;
-  color: #d7c8b1 !important;
-  border-color: #0a3021 !important;
+background-color: #0e442f !important;
+color: #d7c8b1 !important;
+border-color: #0a3021 !important;
 }
 #instagram-button{
-  color: #d7c8b1 !important;
-  font-size: 1.5em; 
-  padding-top: 3px;
+color: #d7c8b1 !important;
+font-size: 1.5em; 
+padding-top: 3px;
 }
 .button:hover,
 .button:focus {
-  background-color: #197954 !important;
-  border-color: #0a3021 !important;
+background-color: #197954 !important;
+border-color: #0a3021 !important;
 }
-
-.button-outline {
-  background-color: transparent !important;  /* no fill */
-  border: 2px solid #0e442f !important;  
-  color: #0e442f !important;              
-  justify-content: flex-start;          
-}
-
-.button-outline:hover,
-.button-outline:focus {
-  background-color: #0e442f !important;  /* green fill on hover */
-  color: #d7c8b1 !important;             /* beige text on hover */
-}
-
-
-/* Button wrapper overrides column/container padding */
-.button-wrapper {
-  width: 100%;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  display: flex;
-  justify-content: center; /* center the button */
-  margin-top: 1rem;
-  box-sizing: border-box;
-}
-
-/* Keep the wide button centered */
-.wide-button {
-  width: 80%;
-  max-width: 400px; /* optional max-width to prevent overflow on mobile */
-  text-align: center;
-  background-color: transparent !important;
-  border: 2px solid #0e442f !important;
-  color: #0e442f !important;
-  padding: 12px 0;
-  box-sizing: border-box;
-}
-
-#bottom-fixed {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #222; /* optional: match your page or keep transparent */
-  text-align: center;
-  padding: 0.5rem 0;
-  z-index: 9999; /* always on top */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem; /* spacing between button and dev credit */
-  box-sizing: border-box;
-}
-
-#bottom-fixed {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  background: transparent;  /* ensure see-through */
-  z-index: 999;
-  padding: 0;
-  margin: 0;
-}
-
-/* Button styling */
-.wide-button {
-  display: inline-block;
-  width: 80%;
-  max-width: 400px;
-  padding: 12px 0;
-  margin: 0;
-  background-color: transparent !important;
-  border: 2px solid #0e442f !important;
-  color: #0e442f !important;
-  box-sizing: border-box;
-}
-
-/* Dev credit styling */
-.dev-credit {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #0e442f;
-  line-height: 1.2;
-}
-
-/* Mobile adjustments */
-@media screen and (max-width: 480px) {
-  #bottom-fixed {
-    position: static;       /* lets it follow normal flow under Book Now */
-    margin-top: 1rem;
-  }
-
-  .wide-button {
-    width: 90%;
-    margin-bottom: 0.5rem;
-  }
-
-  .dev-credit {
-    font-size: 0.8rem;
-  }
-}
-
-  .wide-button {
-    width: 90%; /* smaller width on mobile */
-  }
-}
-
 
 #tagline-banner{
-  background-color: #d7c8b1 !important;
-  font-size: 60px;
-  font-weight: 400;
-  color: #0e442f;
+background-color: #d7c8b1;
+font-size: 60px;
+font-weight: 400;
+color: #0e442f;
 }
 .columns{
-  background-color: #222;
+background-color: #222;
 }
-  #synopsis-image {
-    margin: 20px;
-  }
-  #synopsis-section {
-    display: flex;
+#synopsis-image {
+margin: 20px;
+}
+#synopsis-section {
+display: flex;
+    flex-direction: row;
     flex-direction: column;
-    align-items: center;
-  justify-content: center;
-  }
-  #synopsis-section .subtitle {
-      padding: 20px;
-      margin-right: 20px;
-      color: #d7c8b1;
-      vertical-align: middle;
-      align-items: center;
-    }
+align-items: center;
+justify-content: center;
+}
+#synopsis-section .subtitle {
+padding: 20px;
+margin-right: 20px;
+color: #d7c8b1;
+vertical-align: middle;
+align-items: center;
+}
 
 #sub-section {
-  display: block;
-  width: 100%;
+display: block;
+width: 100%;
 }
 
 
 .subtitle,
 .title {
-  color: #0e442f;
+color: #0e442f;
 }
 
 #booking-banner{
-  background-color: #0e442f;
-  background-image: url('imgs/texture_green.jpg');
-  background-size: cover;
-  margin: 0;
-  position: sticky;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  z-index: 10;
-}
-
-#booking-hero .hero-body {
-    padding-top: 2rem;       /* keep some space above content */
-    padding-bottom: 1rem;    /* shrink bottom gap */
+background-color: #0e442f;
+background-image: url('imgs/texture_green.jpg');
+background-size: cover;
+margin: 0;
+position: sticky;
+bottom: 0;
+width: 100%;
+text-align: center;
+padding: 20px;
+z-index: 10;
 }
