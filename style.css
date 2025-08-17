@@ -57,28 +57,24 @@ subtitles {
   color: #d7c8b1 !important;             /* beige text on hover */
 }
 
-.button-wrapper {
-    width: 80%;                /* button takes 80% of column width */
-    display: flex;
-    justify-content: center;   /* center the button inside wrapper */
-    margin-top: 1rem;
-}
-
 .wide-button {
-    width: 100%;               /* fills wrapper */
-    max-width: 100%;
-    text-align: center;        /* centers text */
-    background-color: transparent !important;
-    border: 2px solid #0e442f !important;
-    color: #feeab8 !important; /* visible on dark background */
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
+  display: inline-block !important;   /* override Bulma flex */
+  width: 80%;                         /* almost full column width */
+  max-width: 95%;                     /* prevent overflow */
+  margin: 20px auto 0 auto;           /* center horizontally, spacing on top */
+  padding: 12px 0;                     /* optional: taller button */
+  
+  background-color: transparent !important;
+  border: 2px solid #0e442f !important;
+  color: #0e442f !important;
+  text-align: center !important;      /* center text */
+  box-sizing: border-box;             /* include border in width */
 }
 
 .wide-button:hover,
 .wide-button:focus {
-    background-color: #0e442f !important;
-    color: #d7c8b1 !important;
+  background-color: #0e442f !important;
+  color: #d7c8b1 !important;
 }
 
 
