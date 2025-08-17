@@ -23,7 +23,7 @@ subtitle {
 subtitles {
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -61,6 +61,7 @@ subtitles {
     flex-direction: row;
     align-items: center;
   justify-content: center;
+    padding: 30px;
   }
   #synopsis-section .subtitle {
       padding: 20px;
