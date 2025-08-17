@@ -1,13 +1,13 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
 
-
 body {
-font-family: 'Cormorant Unicase', serif;
+  font-family: 'Cormorant Unicase', serif;
   display: flex;
   flex-direction: column;
   background-color: #222;
   color: #333;
 }
+
 .navbar {
   background-color: #222;
   /*color: #d7c8b1;*/
@@ -20,22 +20,17 @@ subtitle {
   align-items: center;
 }
 
-.column {
-  display: flex;        /* allow stretching */
-}
-
 #subtitles {
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  flex: 1;                     /* fill full column height */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: middle;
-  height: 100%;
-  flex: 1;
   flex-direction: column;
+  justify-content: center;     /* vertical centering */
+  align-items: center;         /* horizontal centering */
+  text-align: center;
 }
 
 /* Override Bulma's default button color */
@@ -44,30 +39,36 @@ subtitle {
   color: #d7c8b1 !important;
   border-color: #0a3021 !important;
 }
-#instagram-button{
+
+#instagram-button {
   color: #d7c8b1 !important;
   font-size: 1.5em; 
   padding-top: 3px;
 }
+
 .button:hover,
 .button:focus {
   background-color: #197954 !important;
   border-color: #0a3021 !important;
 }
 
-#tagline-banner{
+#tagline-banner {
   background-color: #d7c8b1;
 }
-.columns{
+
+.columns {
   background-color: #222;
-  align-items: stretch;
+  align-items: stretch; /* all columns equal height */
+
   #synopsis-image {
     margin: 20px;
   }
+
   #synopsis-section {
     display: flex;
     flex-direction: row;
     align-items: center;
+
     .subtitle {
       padding: 20px;
       margin-right: 20px;
@@ -77,12 +78,17 @@ subtitle {
   }
 }
 
+/* 🔑 Fix: make each column stretchable */
+.column {
+  display: flex;
+}
+
 .subtitle,
 .title {
   color: #0e442f;
 }
 
-#booking-banner{
+#booking-banner {
   background-color: #0e442f;
   background-image: url('imgs/texture_green.jpg');
   background-size: cover;
