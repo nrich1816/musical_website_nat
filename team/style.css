@@ -28,6 +28,7 @@ subtitles {
   display: flex;
   justify-content: center;
   align-items: center;
+  vertical-align: middle;
 }
 
 /* Override Bulma's default button color */
