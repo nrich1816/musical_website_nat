@@ -20,6 +20,10 @@ subtitle {
   align-items: center;
 }
 
+.column {
+  display: flex;        /* allow stretching */
+}
+
 #subtitles {
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
@@ -30,6 +34,8 @@ subtitle {
   align-items: center;
   vertical-align: middle;
   height: 100%;
+  flex: 1;
+  flex-direction: column;
 }
 
 /* Override Bulma's default button color */
