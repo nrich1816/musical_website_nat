@@ -61,6 +61,21 @@ subtitles {
   justify-content: flex-start;
 }
 
+.wide-button {
+  width: 95%;                  /* take up most of the column */
+  max-width: 100%;             /* prevent overflow */
+  background-color: transparent !important;
+  border: 2px solid #0e442f !important;
+  color: #0e442f !important;
+  text-align: center;            /* keep text aligned left */
+  justify-content: flex-start; /* align content inside */
+}
+
+.wide-button:hover,
+.wide-button:focus {
+  background-color: #0e442f !important;
+  color: #d7c8b1 !important;
+}
 
 #tagline-banner{
   background-color: #d7c8b1;
