@@ -58,17 +58,24 @@ subtitles {
 }
 .columns{
   background-color: #222;
-   flex-direction: column-reverse; 
   #synopsis-image {
     margin: 20px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
   }
+  #synopsis-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
    #synopsis-section {
     display: flex;
     flex-direction: row;
     align-items: center;
   justify-content: center;
     padding: 30px;
-     order: -1;
   }
   #synopsis-section .subtitle {
       padding: 20px;
