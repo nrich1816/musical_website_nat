@@ -77,6 +77,12 @@ subtitles {
     }
 }
 
+@media (max-width: 800px) {
+  .synopsis-section, .synopsis-image {
+    flex: 100%;
+  }
+}
+
 .subtitle,
 .title {
   color: #0e442f;
