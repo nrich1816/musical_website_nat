@@ -13,6 +13,15 @@ font-family: 'Cormorant Unicase', serif;
   /*color: #d7c8b1;*/
 }
 
+.navbar-item {
+  color: #fff !important;  /* normal state = white text */
+}
+
+.navbar-item:hover {
+  background-color: #f5f5f5 !important; /* pale/cream hover background */
+  color: #0e442f !important;            /* dark green text on hover */
+}
+
 subtitle {
   font-family: "Amarante", serif;
   font-weight: 400;
