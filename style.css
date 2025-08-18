@@ -80,6 +80,8 @@ subtitles {
 @media (max-width: 800px) {
   .synopsis-section, .synopsis-image {
     flex: 100%;
+    flex-direction: column-reverse;
+    font-size: 9px
   }
 }
 
