@@ -76,6 +76,7 @@ subtitles {
     align-items: center;
   justify-content: center;
     padding: 30px;
+     order: -1;
   }
   #synopsis-section .subtitle {
       padding: 20px;
@@ -86,6 +87,14 @@ subtitles {
     line-height: 1.3;
   }
 }
+
+/* --- MOBILE STYLES --- */
+@media screen and (max-width: 768px) {
+  /* columns stack vertically by default in Bulma, 
+     this just ensures spacing is nice */
+  .columns {
+    flex-direction: column;
+  }
 
 .subtitle,
 .title {
