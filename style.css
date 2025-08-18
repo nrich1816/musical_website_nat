@@ -1,15 +1,16 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
 
+
 body {
-  font-family: 'Cormorant Unicase', serif;
+font-family: 'Cormorant Unicase', serif;
   display: flex;
   flex-direction: column;
   background-color: #222;
   color: #333;
 }
-
 .navbar {
   background-color: #222;
+  /*color: #d7c8b1;*/
 }
 
 .navbar-item {
@@ -21,16 +22,12 @@ body {
   color: #0e442f !important;            /* dark green text on hover */
 }
 
-.subtitle,
-.title {
-  color: #0e442f;
-}
-
 subtitle {
   font-family: "Amarante", serif;
   font-weight: 400;
   font-style: normal;
 }
+
 
 subtitles {
   font-family: "EB Garamond", serif;
@@ -39,12 +36,13 @@ subtitles {
   font-style: normal;
 }
 
+/* Override Bulma's default button color */
 .button {
   background-color: #0e442f !important;
   color: #d7c8b1 !important;
   border-color: #0a3021 !important;
 }
-#instagram-button {
+#instagram-button{
   color: #d7c8b1 !important;
   font-size: 1.5em; 
   padding-top: 3px;
@@ -55,43 +53,36 @@ subtitles {
   border-color: #0a3021 !important;
 }
 
-#tagline-banner {
+#tagline-banner{
   background-color: #d7c8b1;
-  font-size: 60px;
-  font-weight: 400;
+  color: #0e442f;
+}
+.columns{
+  background-color: #222;
+  #synopsis-image {
+    margin: 20px;
+  }
+   #synopsis-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  justify-content: center;
+    padding: 30px;
+  }
+  #synopsis-section .subtitle {
+      padding: 20px;
+      margin-right: 20px;
+      color: #d7c8b1;
+      vertical-align: middle;
+    }
+}
+
+.subtitle,
+.title {
   color: #0e442f;
 }
 
-.columns {
-  background-color: #222;
-}
-
-#synopsis-image {
-  margin: 20px;
-}
-
-#synopsis-section {
-  display: flex;
-  flex-direction: row;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#synopsis-section .subtitle {
-  padding: 20px;
-  margin-right: 20px;
-  color: #d7c8b1;
-  vertical-align: middle;
-  align-items: center;
-}
-
-#sub-section {
-  display: block;
-  width: 100%;
-}
-
-#booking-banner {
+#booking-banner{
   background-color: #0e442f;
   background-image: url('imgs/texture_green.jpg');
   background-size: cover;
@@ -103,3 +94,8 @@ subtitles {
   padding: 20px;
   z-index: 10;
 }
+
+@media screen and (max-width: 768px) {
+  #booking-banner .title {
+    font-size: 1.2rem; /* smaller for mobile */
+  }
