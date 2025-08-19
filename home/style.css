@@ -110,12 +110,12 @@ subtitles {
   #tagline-banner{
   background-color: #d7c8b1;
   color: #0e442f;
-  font-size: 3vw;
   font-weight: 700;
 }
 #tagline-banner .title {
     color: #0e442f !important;  /* enforce dark green */
     text-align: center;          /* center text */
+    font-size: 3vw;
 }
 
 }
