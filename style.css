@@ -68,6 +68,9 @@ subtitles {
     align-items: center;
   justify-content: center;
     padding: 30px;
+    font-family: "EB Garamond", serif;
+      font-size=5
+      color: #feeab8;
   }
   #synopsis-section .subtitle {
       padding: 20px;
@@ -84,13 +87,13 @@ subtitles {
     }
 
     #synopsis-section {
-        order: 1;               /* text first */
-        font-size: 0.9rem;      /* shrink font on mobile */
+        order: 1 !important;               /* text first */
+        font-size: 0.9rem !important;      /* shrink font on mobile */
         margin-bottom: 20px;    /* spacing below text */
     }
 
     #synopsis-image {
-        order: 2;               /* image second */
+        order: 2 !important;               /* image second */
         width: 100%;            /* full width */
     }
 }
