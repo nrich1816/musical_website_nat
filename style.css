@@ -78,11 +78,21 @@ subtitles {
 }
 
 @media (max-width: 800px) {
-  .synopsis-section, .synopsis-image {
-    flex: 100%;
-    flex-direction: column-reverse;
-    font-size: 9px
-  }
+    #synopsis-container {
+        flex-direction: column; /* stack vertically */
+        text-align: center;     /* center text */
+    }
+
+    #synopsis-section {
+        order: 1;               /* text first */
+        font-size: 0.9rem;      /* shrink font on mobile */
+        margin-bottom: 20px;    /* spacing below text */
+    }
+
+    #synopsis-image {
+        order: 2;               /* image second */
+        width: 100%;            /* full width */
+    }
 }
 
 .subtitle,
