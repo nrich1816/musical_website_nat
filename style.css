@@ -99,7 +99,6 @@ subtitles {
     #synopsis-image {
         order: 2;                 /* image second */
         padding: 0px;
-        width: 100%;
     }
 
     #synopsis-image img {
