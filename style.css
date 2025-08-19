@@ -59,6 +59,9 @@ subtitles {
 }
 .columns{
   background-color: #222;
+  #synopsis-image {
+    margin: 20px;
+  }
   #synopsis-image img{
     width: 100%;
     height: auto;
