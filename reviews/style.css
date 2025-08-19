@@ -8,9 +8,19 @@ font-family: 'Cormorant Unicase', serif;
   background-color: #222;
   color: #333;
 }
+
 .navbar {
   background-color: #222;
   /*color: #d7c8b1;*/
+}
+
+.navbar-item {
+  color: #a3a9b3 !important;
+}
+
+.navbar-item:hover {
+  background-color: #f5f5f5 !important; /* pale/cream hover background */
+  color: #0e442f !important;            /* dark green text on hover */
 }
 
 subtitle {
