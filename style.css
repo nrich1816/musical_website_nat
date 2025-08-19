@@ -54,7 +54,7 @@ subtitles {
 }
 
 #tagline-banner{
-  background-image: url("imgs/texture_paper.jpg");
+ background-color: #d7c8b1;
   color: #0e442f;
   font-size: 4vw;
   font-weight: 700;
@@ -94,6 +94,8 @@ subtitles {
     #synopsis-image {
         order: 2;                 /* image second */
         padding: 0px;
+      margin-bottom: 0px;
+      align: center;
     }
 }
 
