@@ -22,6 +22,10 @@ font-family: 'Cormorant Unicase', serif;
   color: #0e442f !important;            /* dark green text on hover */
 }
 
+.navbar-button {
+  margin: 8px;
+}
+
 subtitle {
   font-family: "Amarante", serif;
   font-weight: 400;
