@@ -59,9 +59,6 @@ subtitles {
 }
 .columns{
   background-color: #222;
-  #synopsis-image {
-    margin: 20px;
-  }
    #synopsis-section {
     display: flex;
     flex-direction: row;
@@ -88,12 +85,11 @@ subtitles {
     #synopsis-section {
         order: 1 !important;               /* text first */
         font-size: 0.85rem !important;      /* shrink font on mobile */
-        margin-bottom: 20px;    /* spacing below text */
     }
 
     #synopsis-image {
-        order: 2 !important;               /* image second */
-      width: 100%
+      order: 2 !important;               /* image second */
+      size: 100%
     }
 }
 
