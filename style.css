@@ -56,17 +56,13 @@ subtitles {
 #tagline-banner{
   background-color: #d7c8b1;
   color: #0e442f;
+  font-size: 4vw;
+  font-weight: 700;
 }
 .columns{
   background-color: #222;
-  #synopsis-image {
-    padding: 20px;       /* add padding around image container */
-    box-sizing: border-box; /* ensures padding doesn't break layout */
-  }
-  #synopsis-image img{
-    width: 100%;
-    height: auto;
-    display: block;
+   #synopsis-image {
+    margin: 20px;
   }
    #synopsis-section {
     display: flex;
@@ -110,6 +106,13 @@ subtitles {
         width: 100%;              /* image full width */
         height: auto;
     }
+
+  #tagline-banner{
+  background-color: #d7c8b1;
+  color: #0e442f;
+  font-size: 6VW;
+  font-weight: 700;
+}
 }
 
 .subtitle,
