@@ -98,12 +98,12 @@ subtitles {
 
     #synopsis-image {
         order: 2;                 /* image second */
-        padding: 10px;
+        padding: 0px;
         width: 100%;
     }
 
     #synopsis-image img {
-        width: 100%;              /* image full width */
+        width: 90%;              /* image full width */
         height: auto;
     }
 
