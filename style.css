@@ -59,6 +59,12 @@ subtitles {
 }
 .columns{
   background-color: #222;
+  #synopsis-container {
+     display: flex;           /* parent container must be flex */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
   #synopsis-image {
     margin: 20px;
   }
@@ -69,7 +75,7 @@ subtitles {
   justify-content: center;
     padding: 30px;
     font-family: "EB Garamond", serif;
-      font-size=5
+      font-size: 5rem;
       color: #feeab8;
   }
   #synopsis-section .subtitle {
