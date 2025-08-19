@@ -106,12 +106,11 @@ subtitles {
       margin-bottom: 0px;
       align: center;
     }
-}
 
   #tagline-banner{
   background-color: #d7c8b1;
   color: #0e442f;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 700;
 }
 #tagline-banner .title {
