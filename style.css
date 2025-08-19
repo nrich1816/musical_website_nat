@@ -59,6 +59,11 @@ subtitles {
 }
 .columns{
   background-color: #222;
+  #synopsis-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
    #synopsis-section {
     display: flex;
     flex-direction: row;
@@ -80,16 +85,25 @@ subtitles {
 @media (max-width: 800px) {
     #synopsis-container {
         flex-direction: column; /* stack vertically */
+      padding: 10px;          /* reduce container padding */
+        gap: 10px;              /* smaller gap */
     }
 
     #synopsis-section {
-        order: 1 !important;               /* text first */
-        font-size: 0.85rem !important;      /* shrink font on mobile */
+        order: 1;                 /* text first */
+        font-size: 0.85rem;       /* shrink font on mobile */
+        margin: 0;
+        padding: 0;
     }
 
     #synopsis-image {
-      order: 2 !important;               /* image second */
-      size: 100%
+        order: 2;                 /* image second */
+        width: 100%;
+    }
+
+    #synopsis-image img {
+        width: 100%;              /* image full width */
+        height: auto;
     }
 }
 
