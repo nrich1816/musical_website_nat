@@ -62,12 +62,6 @@ subtitles {
     gap: 20px;      /* spacing between columns */
     padding: 30px;
 }
-  #synopsis-container {
-     display: flex;           /* parent container must be flex */
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
   #synopsis-image {
     margin: 20px;
   }
@@ -75,11 +69,11 @@ subtitles {
     display: flex;
     flex-direction: row;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
     padding: 30px;
     font-family: "EB Garamond", serif;
-      font-size: 1rem;
-      color: #feeab8;
+    font-size: 1rem;
+    color: #feeab8;
   }
   #synopsis-section .subtitle {
       padding: 20px;
@@ -102,7 +96,6 @@ subtitles {
 
     #synopsis-image {
         order: 2 !important;               /* image second */
-        width: 100%;            /* full width */
     }
 }
 
