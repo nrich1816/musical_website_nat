@@ -54,20 +54,30 @@ subtitles {
 }
 
 #tagline-banner{
-  background-color: #d7c8b1;
+ background-color: #d7c8b1;
   color: #0e442f;
+  font-size: 4vw;
+  font-weight: 700;
 }
+#tagline-banner .title {
+    color: #0e442f !important;  /* enforce dark green */
+    text-align: center;          /* center text */
+}
+
 .columns{
   background-color: #222;
-  #synopsis-image {
+   #synopsis-image {
     margin: 20px;
   }
    #synopsis-section {
     display: flex;
     flex-direction: row;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
     padding: 30px;
+    font-family: "EB Garamond", serif;
+    font-size: 1rem;
+    color: #feeab8;
   }
   #synopsis-section .subtitle {
       padding: 20px;
@@ -75,6 +85,36 @@ subtitles {
       color: #d7c8b1;
       vertical-align: middle;
     }
+}
+
+@media (max-width: 800px) {
+
+    #synopsis-section {
+        order: 1;                 /* text first */
+        font-size: 0.85rem;       /* shrink font on mobile */
+        margin: 0;
+        padding: 0;
+    }
+
+    #synopsis-image {
+        order: 2;                 /* image second */
+        padding: 0px;
+      margin-bottom: 0px;
+      align: center;
+    }
+}
+
+  #tagline-banner{
+  background-color: #d7c8b1;
+  color: #0e442f;
+  font-size: 5vw;
+  font-weight: 700;
+}
+#tagline-banner .title {
+    color: #0e442f !important;  /* enforce dark green */
+    text-align: center;          /* center text */
+}
+
 }
 
 .subtitle,
@@ -94,3 +134,8 @@ subtitles {
   padding: 20px;
   z-index: 10;
 }
+
+@media screen and (max-width: 768px) {
+  #booking-banner .title {
+    font-size: 1.2rem; /* smaller for mobile */
+  }
