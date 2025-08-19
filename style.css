@@ -106,17 +106,16 @@ subtitles {
       margin-bottom: 0px;
       align: center;
     }
-}
 
   #tagline-banner{
   background-color: #d7c8b1;
   color: #0e442f;
-  font-size: 5vw;
   font-weight: 700;
 }
 #tagline-banner .title {
     color: #0e442f !important;  /* enforce dark green */
     text-align: center;          /* center text */
+    font-size: 4vw !important;
 }
 
 }
@@ -143,3 +142,20 @@ subtitles {
   #booking-banner .title {
     font-size: 1.2rem; /* smaller for mobile */
   }
+}
+
+#image-container {
+  display: block;
+}
+#image-banner {
+  display: none;
+}
+  
+@media only screen and (max-width:769px) {
+#image-container {
+   display: none;
+}
+#image-banner {
+   display: block;
+}
+}
