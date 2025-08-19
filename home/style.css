@@ -143,3 +143,15 @@ subtitles {
   #booking-banner .title {
     font-size: 1.2rem; /* smaller for mobile */
   }
+
+@media only screen and (max-width:768px) {
+#image-container {
+   display: none;
+}
+}
+  
+  @media only screen and (min-width:769px) {
+#image-banner {
+   display: none;
+}
+}
