@@ -28,9 +28,10 @@ font-family: 'Cormorant Unicase', serif;
 }
 
 .navbar-dropdown {
-  background-color: #222;
   border-top: none; /* remove Bulma’s white border */
   box-shadow: none; /* optional, removes Bulma’s shadow */
+  border-top: 0; /* remove Bulma’s white border */
+  border-bottom: 0;
 }
 
 .navbar-dropdown .navbar-item {
