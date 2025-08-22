@@ -9,8 +9,22 @@ font-family: 'Cormorant Unicase', serif;
   color: #333;
 }
 
-.navbar-toggler-icon {
-    background-color: #0e442f !important;
+/* Burger */
+.navbar-burger span {
+  background-color: #0e442f; /* pale cream */
+}
+
+.navbar-burger.is-active span {
+  background-color: #0e442f; /* dark green when active */
+}
+
+/* Dropdown arrow */
+.navbar-link::after {
+  border-color: #0e442f;
+}
+
+.navbar-link:hover::after {
+  border-color: #0e442f;
 }
 
 .navbar {
