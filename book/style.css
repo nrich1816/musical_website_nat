@@ -27,50 +27,19 @@ font-family: 'Cormorant Unicase', serif;
   margin: 8px;
 }
 
-.subnav {
-  overflow: hidden;
+.navbar-dropdown {
+  background-color: #222;
+  border-top: none; /* remove Bulma’s white border */
+  box-shadow: none; /* optional, removes Bulma’s shadow */
 }
 
-.subnav-title {
-  border: none;
-  outline: none;
-  margin: 0;
-  color: #a3a9b3;
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
+.navbar-dropdown .navbar-item {
+  color: #a3a9b3 !important;
 }
 
-/* Add a red background color to navigation links on hover */
-.navbar a:hover, .subnav:hover .subnav-title {
-  background-color: red;
-}
-
-/* Style the subnav content - positioned absolute */
-.subnav-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: red;
-  width: 100%;
-  z-index: 1;
-}
-
-/* Style the subnav links */
-.subnav-content a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Add a grey background color on hover */
-.subnav-content a:hover {
-  background-color: #fff;
-  color: black;
-}
-
-/* When you move the mouse over the subnav container, open the subnav content */
-.subnav:hover .subnav-content {
-  display: block;
+.navbar-dropdown .navbar-item:hover {
+  background-color: #f5f5f5 !important;
+  color: #0e442f !important;
 }
 
 subtitle {
