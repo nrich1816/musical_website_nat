@@ -45,7 +45,7 @@ font-family: 'Cormorant Unicase', serif;
 }
 
 /* Style the subnav content - positioned absolute */
-.subnavbar-item {
+.subnav-content {
   display: none;
   position: absolute;
   left: 0;
@@ -55,19 +55,19 @@ font-family: 'Cormorant Unicase', serif;
 }
 
 /* Style the subnav links */
-.subnavbar-item a {
+.subnav-content a {
   color: white;
   text-decoration: none;
 }
 
 /* Add a grey background color on hover */
-.subnavbar-item a:hover {
+.subnav-content a:hover {
   background-color: #fff;
   color: black;
 }
 
 /* When you move the mouse over the subnav container, open the subnav content */
-.subnav:hover .subnavbar-tem {
+.subnav:hover .subnav-content {
   display: block;
 }
 
