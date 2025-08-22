@@ -28,12 +28,11 @@ font-family: 'Cormorant Unicase', serif;
 }
 
 .subnav {
-  float: left;
   overflow: hidden;
 }
 
 /* Subnav button */
-.subnav .subnavbtn {
+.subnav .subnav-title {
   font-size: 16px;
   border: none;
   outline: none;
@@ -43,12 +42,12 @@ font-family: 'Cormorant Unicase', serif;
 }
 
 /* Add a red background color to navigation links on hover */
-.navbar a:hover, .subnav:hover .subnavbtn {
+.navbar a:hover, .subnav:hover .subnav-title {
   background-color: red;
 }
 
 /* Style the subnav content - positioned absolute */
-.subnav-content {
+.subnavbar-item {
   display: none;
   position: absolute;
   left: 0;
@@ -58,20 +57,20 @@ font-family: 'Cormorant Unicase', serif;
 }
 
 /* Style the subnav links */
-.subnav-content a {
+.subnavbar-item a {
   float: left;
   color: white;
   text-decoration: none;
 }
 
 /* Add a grey background color on hover */
-.subnav-content a:hover {
+.subnavbar-item a:hover {
   background-color: #fff;
   color: black;
 }
 
 /* When you move the mouse over the subnav container, open the subnav content */
-.subnav:hover .subnav-content {
+.subnav:hover .subnavbar-tem {
   display: block;
 }
 
