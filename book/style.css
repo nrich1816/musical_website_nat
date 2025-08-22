@@ -9,6 +9,10 @@ font-family: 'Cormorant Unicase', serif;
   color: #333;
 }
 
+.navbar-toggler-icon {
+    background-color: #0e442f !important;
+}
+
 .navbar {
   background-color: #222;
   /*color: #d7c8b1;*/
