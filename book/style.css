@@ -10,16 +10,18 @@ font-family: 'Cormorant Unicase', serif;
 }
 
 /* Burger */
-.navbar-burger span {
-  background-color: #0e442f; /* pale cream */
+/* Steady state (before click) */
+.navbar .navbar-burger span {
+  background-color: #0e442f; /* your pale cream */
 }
+
 
 .navbar-burger.is-active span {
   background-color: #0e442f; /* dark green when active */
 }
 
 /* Dropdown arrow */
-.navbar-link::after {
+.navbar .navbar-link::after {
   border-color: #0e442f;
 }
 
