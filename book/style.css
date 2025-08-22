@@ -36,8 +36,6 @@ font-family: 'Cormorant Unicase', serif;
   font-size: 16px;
   border: none;
   outline: none;
-  background-color: inherit;
-  font-family: inherit;
   margin: 0;
 }
 
@@ -58,7 +56,6 @@ font-family: 'Cormorant Unicase', serif;
 
 /* Style the subnav links */
 .subnavbar-item a {
-  float: left;
   color: white;
   text-decoration: none;
 }
