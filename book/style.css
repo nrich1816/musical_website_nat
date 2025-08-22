@@ -31,12 +31,14 @@ font-family: 'Cormorant Unicase', serif;
   overflow: hidden;
 }
 
-/* Subnav button */
-.subnav .subnav-title {
-  font-size: 16px;
+.subnav-title {
   border: none;
   outline: none;
   margin: 0;
+  color: #a3a9b3;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
 }
 
 /* Add a red background color to navigation links on hover */
