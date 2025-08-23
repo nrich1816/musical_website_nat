@@ -8,6 +8,23 @@ font-family: 'Cormorant Unicase', serif;
   background-color: #222;
   color: #333;
 }
+
+.navbar .navbar-burger span {
+  background-color: #6db884;
+}
+
+.navbar-burger.is-active span {
+  background-color: #6db884;
+}
+
+/* Dropdown arrow */
+.navbar .navbar-link::after {
+  border-color: #6db884;
+}
+
+.navbar-link:hover::after {
+  border-color: #6db884;
+}
 .navbar {
   background-color: #222;
   /*color: #d7c8b1;*/
