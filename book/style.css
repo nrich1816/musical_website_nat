@@ -94,6 +94,7 @@ subtitles {
 
 #tagline-banner{
   background-color: #d7c8b1;
+  text-align: center;
 }
 .columns{
   background-color: #222;
@@ -102,7 +103,7 @@ subtitles {
   }
   #synopsis-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     .subtitle {
       padding: 20px;
