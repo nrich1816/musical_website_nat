@@ -137,3 +137,45 @@ subtitles {
   text-align: center;
   vertical-align: middle;
 }
+
+.ticket-table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.ticket-table td {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.ticket-table td:nth-child(1) {
+  text-align: left;
+}
+
+.ticket-table td:nth-child(2) {
+  text-align: right;
+}
+
+.ticket-table td:nth-child(3) {
+  text-align: right;
+}
+
+.ticket-btn {
+  background-color: #32b39c;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 9999px; /* pill shape */
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  display: inline-block;
+}
+
+.ticket-btn:hover {
+  background-color: #279482;
+}
