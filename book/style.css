@@ -139,9 +139,9 @@ subtitles {
 }
 
 .ticket-table {
-  width: 90%;
+  width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .ticket-table td {
