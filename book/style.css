@@ -179,3 +179,24 @@ subtitles {
 .ticket-btn:hover {
   background-color: #279482;
 }
+
+#adc-table {
+align: center;
+}
+
+.adc-logo {
+width: 150;
+  height: 50;
+}
+
+@media (max-width: 769px) {
+#adc-table {
+width: 90%;
+  align: center;
+  margin-right: 0px;
+}
+  .adc-logo {
+width: 300;
+  height: 100;
+}
+}
