@@ -181,8 +181,8 @@ subtitles {
 }
 
 .adc-tickets {
-margin-right: 40px;
-  padding-right: 40px;
+margin-right: 60px;
+  padding-right: 60px;
 }
 
 .adc-table {
@@ -212,7 +212,8 @@ width: 300;
   height: 100;
 }
   .ticket-btn {
-  size: 50%;
+  width: 200;
+    height: 100;
 }
   .ticket-table {
   width: 100%;
