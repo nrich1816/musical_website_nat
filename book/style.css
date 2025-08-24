@@ -180,6 +180,11 @@ subtitles {
   background-color: #279482;
 }
 
+.adc-tickets {
+margin-right: 40px;
+  padding-right: 40px;
+}
+
 .adc-table {
 align: center;
 }
@@ -190,7 +195,12 @@ width: 150;
 }
 
 @media screen and (max-width: 769px) {
-.adc-table {
+
+.adc-tickets {
+margin-right: 0;
+  padding-right: 0;
+}
+  .adc-table {
 width: 100%;
   align: center;
   margin-right: 0px;
