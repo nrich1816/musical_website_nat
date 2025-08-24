@@ -180,7 +180,7 @@ subtitles {
   background-color: #279482;
 }
 
-#adc-table {
+.adc-table {
 align: center;
   margin-right: 40px;
   padding-right: 40px;
@@ -192,11 +192,12 @@ width: 150;
 }
 
 @media screen and (max-width: 769px) {
-#adc-table {
+.adc-table {
 width: 100%;
   align: center;
   margin-right: 0px;
   padding: 0;
+  padding-right: 0;
 }
   .adc-logo {
 width: 300;
