@@ -142,8 +142,6 @@ subtitles {
   width: 100%;
   border-collapse: collapse;
   margin-top: 30px;
-    margin-right: 40px;
-  padding-right: 40px;
 }
 
 .ticket-table td {
@@ -184,8 +182,6 @@ subtitles {
 
 .adc-table {
 align: center;
-  margin-right: 40px;
-  padding-right: 40px;
 }
 
 .adc-logo {
