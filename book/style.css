@@ -183,6 +183,7 @@ subtitles {
 #adc-table {
 align: center;
   margin-right: 40px;
+  padding-right: 40px;
 }
 
 .adc-logo {
@@ -195,9 +196,13 @@ width: 150;
 width: 100%;
   align: center;
   margin-right: 0px;
+  padding: 0;
 }
   .adc-logo {
 width: 300;
   height: 100;
+}
+  .ticket-btn {
+  size: 50%;
 }
 }
