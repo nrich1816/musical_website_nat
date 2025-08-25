@@ -98,12 +98,14 @@ subtitles {
 }
 .columns{
   background-color: #222;
+}
+
   #synopsis-image {
     margin: 20px;
   }
   #synopsis-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     .subtitle {
       padding: 20px;
@@ -112,7 +114,6 @@ subtitles {
       vertical-align: middle;
     }
   }
-}
 
 .subtitle,
 .title {
