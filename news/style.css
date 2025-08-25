@@ -136,8 +136,8 @@ subtitles {
 }
 
 @media screen and (max-width: 769px) {
-  .frame {
-    width: 100%;
-    height: auto;
+  #frame {
+    width: 100% !important;
+    height: 700px !important;
   }
 }
