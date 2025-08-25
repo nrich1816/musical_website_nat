@@ -8,9 +8,39 @@ font-family: 'Cormorant Unicase', serif;
   background-color: #222;
   color: #333;
 }
+
+.navbar .navbar-burger span {
+  background-color: #6db884;
+}
+
+.navbar-burger.is-active span {
+  background-color: #6db884;
+}
+
+/* Dropdown arrow */
+.navbar .navbar-link::after {
+  border-color: #6db884;
+}
+
+.navbar-link:hover::after {
+  border-color: #6db884;
+}
 .navbar {
   background-color: #222;
   /*color: #d7c8b1;*/
+}
+
+.navbar-item {
+  color: #a3a9b3 !important;
+}
+
+.navbar-item:hover {
+  background-color: #f5f5f5 !important; /* pale/cream hover background */
+  color: #0e442f !important;            /* dark green text on hover */
+}
+
+.navbar-button {
+  margin: 8px;
 }
 
 subtitle {
@@ -45,24 +75,66 @@ subtitles {
 }
 
 #tagline-banner{
-  background-color: #d7c8b1;
+ background-color: #d7c8b1;
+  color: #0e442f;
+  font-size: 4vw;
+  font-weight: 700;
 }
+#tagline-banner .title {
+    color: #0e442f !important;  /* enforce dark green */
+    text-align: center;          /* center text */
+}
+
 .columns{
   background-color: #222;
-  #synopsis-image {
+   #synopsis-image {
     margin: 20px;
   }
-  #synopsis-section {
+   #synopsis-section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    .subtitle {
+    justify-content: center;
+    padding: 30px;
+    font-family: "EB Garamond", serif;
+    font-size: 1rem;
+    color: #feeab8;
+  }
+  #synopsis-section .subtitle {
       padding: 20px;
       margin-right: 20px;
       color: #d7c8b1;
       vertical-align: middle;
     }
-  }
+}
+
+@media (max-width: 800px) {
+
+    #synopsis-section {
+        order: 1;                 /* text first */
+        font-size: 0.85rem;       /* shrink font on mobile */
+        margin: 0;
+        padding: 0;
+    }
+
+    #synopsis-image {
+        order: 2;                 /* image second */
+        padding: 0px;
+      margin-bottom: 0px;
+      align: center;
+    }
+
+  #tagline-banner{
+  background-color: #d7c8b1;
+  color: #0e442f;
+  font-weight: 700;
+}
+#tagline-banner .title {
+    color: #0e442f !important;  /* enforce dark green */
+    text-align: center;          /* center text */
+    font-size: 5vw !important;
+}
+
 }
 
 .subtitle,
@@ -81,4 +153,26 @@ subtitles {
   text-align: center;
   padding: 20px;
   z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  #booking-banner .title {
+    font-size: 1.2rem; /* smaller for mobile */
+  }
+}
+
+#image-container {
+  display: block;
+}
+#image-banner {
+  display: none;
+}
+  
+@media only screen and (max-width:769px) {
+#image-container {
+   display: none;
+}
+#image-banner {
+   display: block;
+}
 }
