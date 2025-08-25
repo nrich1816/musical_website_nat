@@ -3,8 +3,6 @@
 
 body {
 font-family: 'Cormorant Unicase', serif;
-  display: flex;
-  flex-direction: column;
   background-color: #222;
   color: #333;
 }
