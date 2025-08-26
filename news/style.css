@@ -11,6 +11,10 @@ font-family: 'Cormorant Unicase', serif;
   background-color: #6db884;
 }
 
+#lines {
+display: table-cell;
+  vertical-align: bottom;
+}
 
 .navbar-burger.is-active span {
   background-color: #6db884;
