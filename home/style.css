@@ -13,6 +13,9 @@ font-family: 'Cormorant Unicase', serif;
   background-color: #6db884;
 }
 
+.navbar-link {
+color: #a3a9b3 !important;
+}
 
 .navbar-burger.is-active span {
   background-color: #6db884;
