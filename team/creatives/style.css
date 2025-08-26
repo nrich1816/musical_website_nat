@@ -35,6 +35,10 @@ body {
   color: #a3a9b3 !important;
 }
 
+.navbar-link {
+color: #a3a9b3 !important;
+}
+
 .navbar-item:hover {
   background-color: #f5f5f5 !important; /* pale/cream hover background */
   color: #0e442f !important;            /* dark green text on hover */
