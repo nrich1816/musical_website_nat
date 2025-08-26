@@ -21,6 +21,10 @@ font-family: 'Cormorant Unicase', serif;
   border-color: #6db884;
 }
 
+.navbar-link {
+color: #a3a9b3 !important;
+}
+
 .navbar-link:hover::after {
   border-color: #6db884;
 }
