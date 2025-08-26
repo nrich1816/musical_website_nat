@@ -18,6 +18,10 @@ font-family: 'Cormorant Unicase', serif;
   background-color: #6db884;
 }
 
+.navbar-link {
+color: #a3a9b3 !important;
+}
+
 /* Dropdown arrow */
 .navbar .navbar-link::after {
   border-color: #6db884;
