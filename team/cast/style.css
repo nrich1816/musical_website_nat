@@ -117,6 +117,10 @@ subtitle {
   color: #0e442f;
 }
 
+.navbar-link {
+color: #a3a9b3 !important;
+}
+
 #booking-banner{
   background-color: #0e442f;
   background-image: url('imgs/texture_green.jpg');
