@@ -14,6 +14,8 @@ font-family: 'Cormorant Unicase', serif;
 #lines {
 display: table-cell;
   vertical-align: bottom;
+  align-self: flex-end;
+  align-items: end;
 }
 
 .navbar-burger.is-active span {
