@@ -191,6 +191,19 @@ margin-right: 60px;
 
 .adc-table {
 align: center;
+  width: 100%;            /* table fills container */
+  border-collapse: collapse;
+  table-layout: fixed;    /* ensures cells scale proportionally */
+}
+
+#black-row {
+  background-color: black;
+  width: 100%;
+}
+
+#black-row td {
+  padding: 10px; /* spacing inside cells */
+  margin: 0;
 }
 
 .adc-logo {
