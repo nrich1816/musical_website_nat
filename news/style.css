@@ -11,12 +11,18 @@ font-family: 'Cormorant Unicase', serif;
   background-color: #6db884;
 }
 
-#lines {
-display: table-cell;
-  vertical-align: bottom;
-  align-self: flex-end;
-  align-items: end;
+#synopsis-section {
+  display: flex;
+  flex-direction: column;
 }
+
+#synopsis-section hr {
+  margin-top: auto;
+  border: none;
+  height: 2px;
+  background-color: #6db884;
+}
+
 
 .navbar-burger.is-active span {
   background-color: #6db884;
