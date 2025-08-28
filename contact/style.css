@@ -160,14 +160,19 @@ subtitles {
 }
 
 #audienceful-Xr8n3s {
-  text-align: center;
-  align-items: center;
-  vertical-align: center;
-  width: 70%;
+  display: flex; 
+  justify-content: center;  
+  width: 70%;   
   height: auto;
-  display: inline-block;  /* makes the form respect the text-align center */
-    max-width: 100%;
+  margin: 0 auto;    
+  padding: 20px 0;     
 }
+
+#audienceful-Xr8n3s > * {
+  width: 100%;                  /* make the inner form fill the container */
+  max-width: 100%;              /* responsive */
+}
+
 
 @media screen and (max-width: 768px) {
   #booking-banner .title {
