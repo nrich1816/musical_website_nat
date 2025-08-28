@@ -169,7 +169,7 @@ subtitles {
 }
 
 #audienceful-Xr8n3s > * {
-  width: 100%;                  /* make the inner form fill the container */
+  width: 40%;                  /* make the inner form fill the container */
   max-width: 100%;              /* responsive */
 }
 
