@@ -159,6 +159,14 @@ subtitles {
   z-index: 10;
 }
 
+#audienceful-Xr8n3s {
+  text-align: center;
+  align-items: center;
+  vertical-align: center;
+  width: 70%;
+  height: auto;
+}
+
 @media screen and (max-width: 768px) {
   #booking-banner .title {
     font-size: 1.2rem; /* smaller for mobile */
