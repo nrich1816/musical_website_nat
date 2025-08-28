@@ -160,18 +160,21 @@ subtitles {
 }
 
 #audienceful-Xr8n3s {
-  display: flex; 
-  justify-content: center;  
-  width: 100%;   
-  height: auto;
-  margin: 0 auto;    
-  padding: 20px 0;     
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 #audienceful-Xr8n3s > * {
-  width: 100%;                  /* make the inner form fill the container */
-  max-width: 100%;              /* responsive */
+  width: 100%;
+  max-width: 600px;
+  min-width: 280px;
+  box-sizing: border-box;
 }
+
 
 
 @media screen and (max-width: 768px) {
