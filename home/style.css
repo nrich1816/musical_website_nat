@@ -125,6 +125,24 @@ subtitles {
   vertical-align: middle;
 }
 
+#booking-wrapper {
+  position: relative;
+  height: 200px; /* or however tall you want the sticky region to be */
+}
+
+#booking-banner {
+  position: sticky;
+  bottom: 0;
+  background-color: #0e442f;
+  background-image: url('imgs/texture_green.jpg');
+  background-size: cover;
+  text-align: center;
+  padding: 20px;
+  z-index: 100;
+  width: 100%;
+}
+
+
 @media (max-width: 800px) {
 
     #synopsis-section {
