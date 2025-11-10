@@ -8,7 +8,6 @@ font-family: 'Cormorant Unicase', serif;
   background-color: #222;
   color: #333;
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 img {
@@ -166,17 +165,18 @@ subtitles {
   color: #0e442f;
 }
 
-#booking-banner{
+
+#booking-banner {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
   background-color: #0e442f;
   background-image: url('imgs/texture_green.jpg');
   background-size: cover;
   margin: 0;
-  position: sticky;
-  bottom: 0;
   width: 100%;
   text-align: center;
   padding: 20px;
-  z-index: 10;
 }
 
 @media screen and (max-width: 768px) {
