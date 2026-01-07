@@ -82,6 +82,12 @@ subtitles {
     background-color: black;
 }
 
+#banner-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 #tagline-banner{
  background-color: #d7c8b1;
   color: #0e442f;
