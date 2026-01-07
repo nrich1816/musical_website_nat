@@ -78,6 +78,10 @@ subtitles {
   border-color: #0a3021 !important;
 }
 
+#banner-photo {
+    background-color: black;
+}
+
 #tagline-banner{
  background-color: #d7c8b1;
   color: #0e442f;
