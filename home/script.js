@@ -13,19 +13,33 @@ function toggleNavbar() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const gallery = document.getElementById("gallery");
-  if (!gallery) return; // safety if not on this page
+  if (!gallery) return;
+
+  const track = gallery.querySelector(".gallery-track");
+  const images = Array.from(track.children);
+
+  const firstSetWidth = images.slice(0, images.length / 2)
+                              .reduce((sum, img) => sum + img.offsetWidth + parseInt(getComputedStyle(img).marginLeft) + parseInt(getComputedStyle(img).marginRight), 0);
 
   let paused = false;
 
-  gallery.addEventListener("mouseenter", () => paused = true);
-  gallery.addEventListener("mouseleave", () => paused = false);
+
+  gallery.addEventListener("mouseenter", () => {
+    paused = true;
+    gallery.style.overflowX = "auto";
+  });
+
+  gallery.addEventListener("mouseleave", () => {
+    paused = false;
+    gallery.style.overflowX = "hidden";
+  });
 
   function autoScroll() {
     if (!paused) {
       gallery.scrollLeft += 0.3;
-         if (gallery.scrollLeft >= gallery.scrollWidth / 2) {
-      gallery.scrollLeft = 0; 
-    }
+      if (gallery.scrollLeft >= firstSetWidth) {
+        gallery.scrollLeft = 0;
+      }
     }
     requestAnimationFrame(autoScroll);
   }
