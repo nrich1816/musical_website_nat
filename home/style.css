@@ -69,7 +69,7 @@ div.gallery {
 
 .gallery-track img {
   padding: 10px;
-  width: 300px;
+  width: auto;
   height: 200px;
   flex-shrink: 0;    
 }
@@ -79,17 +79,17 @@ div.gallery {
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 @media (max-width: 768px) {
     .gallery img {
-        width: 200px;
+        width: auto;
         height: 150px;
     }
 }
