@@ -87,13 +87,16 @@ subtitles {
 
 #banner-photo {
     background-color: black;
+    padding: 40px 0;
 }
 
 #banner-photo img {
-    width: auto;   
-    max-width: 600px;  
-    height: auto;  
+    width: 600px;  
+    max-width: 100%; 
+    height: auto;
+    display: block;
 }
+
 
 #tagline-banner{
  background-color: #d7c8b1;
