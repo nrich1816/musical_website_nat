@@ -1,14 +1,10 @@
 console.log("Website loaded!");
 
 function toggleNavbar() {
-    const navbar = document.getElementById("navbar");
-    const burger = document.querySelector(".navbar-burger");
-    navbar.classList.contains("is-active") ?
-        navbar.classList.remove("is-active") :
-        navbar.classList.add("is-active");
-    burger.classList.contains("is-active") ?
-        burger.classList.remove("is-active") :
-        burger.classList.add("is-active");
+  const navbar = document.getElementById("navbar");
+  const burger = document.querySelector(".navbar-burger");
+  navbar.classList.toggle("is-active");
+  burger.classList.toggle("is-active");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -18,27 +14,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const track = gallery.querySelector(".gallery-track");
   const images = Array.from(track.children);
 
-  const firstSetWidth = images.slice(0, images.length / 2)
-                              .reduce((sum, img) => sum + img.offsetWidth + parseInt(getComputedStyle(img).marginLeft) + parseInt(getComputedStyle(img).marginRight), 0);
+  // Measure first set width accurately
+  const firstSet = images.slice(0, images.length / 2);
+  const firstSetWidth = firstSet.reduce((sum, img) => sum + img.getBoundingClientRect().width, 0);
 
   let paused = false;
 
-
   gallery.addEventListener("mouseenter", () => {
     paused = true;
-    gallery.style.overflowX = "auto";
+    gallery.style.overflowX = "auto"; // show scrollbar when paused
   });
 
   gallery.addEventListener("mouseleave", () => {
     paused = false;
-    gallery.style.overflowX = "hidden";
+    gallery.style.overflowX = "hidden"; // hide scrollbar
   });
 
   function autoScroll() {
     if (!paused) {
-      gallery.scrollLeft += 0.3;
+      gallery.scrollLeft += 0.5; // speed; increase = faster
       if (gallery.scrollLeft >= firstSetWidth) {
-        gallery.scrollLeft = 0;
+        gallery.scrollLeft -= firstSetWidth; // seamless reset
       }
     }
     requestAnimationFrame(autoScroll);
