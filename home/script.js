@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function autoScroll() {
     if (!paused) {
-      gallery.scrollLeft += 0.3; // speed (lower = slower)
-      if (gallery.scrollLeft >= gallery.scrollWidth - gallery.clientWidth) {
-        gallery.scrollLeft = 0;
-      }
+      gallery.scrollLeft += 0.3;
+         if (gallery.scrollLeft >= gallery.scrollWidth / 2) {
+      gallery.scrollLeft = 0; 
+    }
     }
     requestAnimationFrame(autoScroll);
   }
