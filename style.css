@@ -137,6 +137,12 @@ subtitles {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  #banner.photo img {
+    width: 100%;
+  }
+}
+
 
 
 #tagline-banner{
