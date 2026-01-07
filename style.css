@@ -93,6 +93,7 @@ subtitles {
     width: 100%;
     height: auto;
     display: block;
+  padding: 0;
 }
 
 #tagline-banner{
