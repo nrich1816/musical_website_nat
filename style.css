@@ -54,6 +54,45 @@ color: #a3a9b3 !important;
   margin: 8px;
 }
 
+.gallery {
+  width: 100%;
+  background-color: #333; 
+  padding: 10px 0;  
+  overflow-x: auto; 
+  white-space: nowrap; 
+  scrollbar-width: thin; 
+}
+
+.gallery::-webkit-scrollbar {
+  height: 6px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background-color: #6db884;
+  border-radius: 4px;
+}
+
+.gallery-track {
+  display: flex; 
+  width: max-content;  
+  gap: 20px; 
+}
+
+.gallery-track img {
+  height: 200px;
+  width: auto; 
+  flex-shrink: 0; 
+  display: block;
+  object-fit: cover; 
+  padding: 0 10px;   
+}
+@media (max-width: 768px) {
+  .gallery-track img {
+    height: 150px; 
+    padding: 0 5px;
+  }
+}
+
 subtitle {
   font-family: "Amarante", serif;
   font-weight: 400;
