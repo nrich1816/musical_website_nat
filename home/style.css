@@ -64,7 +64,7 @@ div.gallery {
 .gallery-track {
   display: inline-flex;
   white-space: nowrap;
-  animation: scroll 100s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 .gallery-track img {
