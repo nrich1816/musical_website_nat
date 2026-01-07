@@ -14,17 +14,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const track = gallery.querySelector(".gallery-track");
   const images = Array.from(track.children);
 
-  const firstSet = images.slice(0, images.length / 2);
-  const firstSetWidth = firstSet.reduce((sum, img) => {
-    const style = getComputedStyle(img);
-    const margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
-    return sum + img.getBoundingClientRect().width + margin;
-  }, 0);
+  function getFirstSetWidth() {
+    const firstSet = images.slice(0, images.length / 2);
+    return firstSet.reduce((sum, img) => {
+      const style = getComputedStyle(img);
+      const margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+      return sum + img.getBoundingClientRect().width + margin;
+    }, 0);
+  }
 
-  let paused = false; 
-  let scrolling = false;  
+  let firstSetWidth = getFirstSetWidth();
+  let paused = false;
+  let scrolling = false;
 
-  // Hover pause
+  window.addEventListener("resize", () => {
+    firstSetWidth = getFirstSetWidth();
+  });
+
   gallery.addEventListener("mouseenter", () => {
     paused = true;
     gallery.style.overflowX = "auto";
@@ -32,15 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gallery.addEventListener("mouseleave", () => {
     paused = false;
-    gallery.style.overflowX = "hidden"; 
+    gallery.style.overflowX = "hidden";
   });
-
 
   function autoScroll() {
     if (!paused && scrolling) {
-      gallery.scrollLeft += 0.5; 
+      gallery.scrollLeft += 0.5;
       if (gallery.scrollLeft >= firstSetWidth) {
-        gallery.scrollLeft -= firstSetWidth; 
+        gallery.scrollLeft -= firstSetWidth;
       }
     }
     requestAnimationFrame(autoScroll);
@@ -52,12 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
         scrolling = entry.intersectionRatio === 1;
       });
     },
-    {
-      threshold: 1.0,
-    }
+    { threshold: 1.0 }
   );
 
   observer.observe(gallery);
-
   autoScroll();
 });
