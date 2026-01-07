@@ -54,6 +54,43 @@ color: #a3a9b3 !important;
   margin: 8px;
 }
 
+.gallery {
+    width: 100%;
+    overflow: hidden;
+    white - space: nowrap;
+}
+ 
+.gallery img {
+    display: inline - block;
+    width: 300px;
+    height: 200px;
+    margin - right: 10px;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+ 
+.gallery {
+    width: 100%;
+    overflow: hidden;
+    white - space: nowrap;
+    animation: scroll 10s linear infinite;
+}
+@media (max - width: 768px) {
+    .gallery img {
+        width: 200px;
+        height: 150px;
+    }
+}
+.gallery:hover {
+    animation - play - state: paused;
+}
+
 subtitle {
   font-family: "Amarante", serif;
   font-weight: 400;
