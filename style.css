@@ -90,9 +90,9 @@ subtitles {
 }
 
 #banner-photo img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: auto;   
+    max-width: 600px;  
+    height: auto;  
 }
 
 #tagline-banner{
