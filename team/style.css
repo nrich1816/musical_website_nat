@@ -118,8 +118,11 @@ subtitle {
 }
 
 .headshots {
-  width: 600px;
-  height: 400px;
+  object-fit: cover;
+}
+
+#headshots {
+  object-fit: cover;
 }
 
 .navbar-link {
