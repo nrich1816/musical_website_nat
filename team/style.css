@@ -90,7 +90,7 @@ subtitle {
 
 .columns{
   background-color: #222;
-  align-items: stretch; /* make sibling columns equal height */
+  align-items: stretch;
   #synopsis-image {
     margin: 20px;
   }
@@ -107,9 +107,11 @@ subtitle {
   }
 }
 
-/* FIX #1: allow each column to stretch to the tallest sibling */
-.column {
+#subtitles,
+#synopsis-section {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .subtitle,
@@ -121,8 +123,11 @@ subtitle {
   object-fit: cover;
 }
 
-#headshots {
+#headshots img {
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  display: block;
 }
 
 .navbar-link {
