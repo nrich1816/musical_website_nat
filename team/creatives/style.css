@@ -35,10 +35,6 @@ body {
   color: #a3a9b3 !important;
 }
 
-.navbar-link {
-color: #a3a9b3 !important;
-}
-
 .navbar-item:hover {
   background-color: #f5f5f5 !important; /* pale/cream hover background */
   color: #0e442f !important;            /* dark green text on hover */
@@ -94,7 +90,7 @@ subtitle {
 
 .columns{
   background-color: #222;
-  align-items: stretch; /* make sibling columns equal height */
+  align-items: stretch;
   #synopsis-image {
     margin: 20px;
   }
@@ -111,14 +107,31 @@ subtitle {
   }
 }
 
-/* FIX #1: allow each column to stretch to the tallest sibling */
-.column {
+#subtitles,
+#synopsis-section {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .subtitle,
 .title {
   color: #0e442f;
+}
+
+.headshots {
+  object-fit: cover;
+}
+
+#headshots img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.navbar-link {
+color: #a3a9b3 !important;
 }
 
 #booking-banner{
